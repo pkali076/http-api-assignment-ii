@@ -4,7 +4,7 @@ const query = require('querystring');
 const htmlHandler = require('./htmlResponses.js');
 const jsonHandler = require('./jsonResponses.js');
 
-const port = process.envPORT || process.env.NODE_PORT || 3000;
+const port = process.env.PORT || process.env.NODE_PORT || 3000;
 const parseBody = (request, response, handler) => {
   // request will come in pieces, so they must be stored in array
   const body = [];
